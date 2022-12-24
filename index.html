@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="image/noel1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/snowfall.css">
+    <script src="./js/snowfall.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.100.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.100.0/examples/js/controls/OrbitControls.js"></script>
+    <title>Merry Christmas</title>
+</head>
+<body id="body">
+    <div class="container">
+        <div class="bgr-container">
+            <div class="box-bgr">
+                <div class="moon">
+                    <img src="image/moon.png" alt="">
+                </div>
+                <div class="christmas-tree">
+                    <img src="image/christmas-tree.png" alt="">
+                </div>
+                <div class="box-text-noel">
+                    <div class="text-noel">
+                        <img src="image/text.png" alt="">
+                    </div>
+                    <span></span>
+                </div>
+                <div class="house">
+                    <img src="image/house.png" alt="">
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="box-santa">
+                <div class="santa-container">
+                    <div class="santa1">
+                        <div class="image-santa">
+                            <img src="image/santa.png" alt="">
+                        </div>
+                        <div class="image-santa-hand">
+                            <img src="image/santa-hand.png" alt="">
+                        </div>
+                    </div>
+                    <div class="box-reindeer">
+                        <div class="reindeer">
+                            <img src="https://www.animatedimages.org/data/media/359/animated-santa-claus-image-0420.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="box-noel-gif">
+                        <div class="noel-gif1">
+                            <img src="https://img.pikbest.com/png-images/20191113/christmas-santa-claus-pile-of-gifts-drawing-illustration-element-gif_2515384.png!bw700" alt="">
+                        </div>
+                        <div class="noel-gift2">
+                            <img src="https://i.pinimg.com/originals/08/a6/a4/08a6a4fb28fb5048fe606937f376017f.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="box-gift">
+                        <div class="gift-bottom"></div>
+                        <div class="gift-top"></div>
+                        <div class="box-fastener">
+                            <div class="fastener1"></div>
+                            <div class="fastener2"></div>
+                        </div>
+                        <div class="content"></div>
+                    </div>
+                    <div class="box-content">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="content1">
+                            <div class="content-text">
+                                <canvas id="canvas"></canvas>
+                            </div>
+                            <div class="image-decorate">
+                                <div class="pineTree">
+                                    <img src="image/pineTree.png" alt="">
+                                </div>
+                                <div class="decorate">
+                                    <img src="image/decorate.png" alt="">
+                                </div>
+                                <div class="bell">
+                                    <img src="image/bell.png" alt="">
+                                    <img src="image/bell.png" alt="">
+                                </div>
+                                <div class="bell1">
+                                    <img src="image/bell1.png" alt="">
+                                    <img src="image/bell1.png" alt="">
+                                    <img src="image/bell1.png" alt="">
+                                    <img src="image/bell1.png" alt="">
+                                </div>
+                                <div class="snowman">
+                                    <img src="image/snowman.png" alt="">
+                                </div>
+                                <div class="image-santa-content">
+                                    <img src="image/santa1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="to-you">To Hải Anh</div>
+                                <div class="merry-xmas">MERRY CHRISTMAS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-boxGift">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./js/app.js"></script>
+<script src="./js/heart.js"></script>
+<script>
+    snowDrop.init({
+      bindto: '#body', // the CSS selector of the container element
+      class: 'snowflake',  	// main class for all snowflakes - default: "snowflake" - this handles animation, so change with caution.
+      frequency: 50,       // create new snowdrop every X ms - default: 100
+      layers: 3,            // amount of layers giving depth to the snow - default: 3, min: 1
+      duration: 5000,       // time for the front layer of drops to hit the floor in ms - default 5000
+      wind: 200             // pixels each snowflake moves to the right as it falls - default: 50
+    })
+</script>
+</html>
+<!-- https://cliply.co/wp-content/uploads/2019/12/371912430_SANTA_CLAUS_400px.gif -->
